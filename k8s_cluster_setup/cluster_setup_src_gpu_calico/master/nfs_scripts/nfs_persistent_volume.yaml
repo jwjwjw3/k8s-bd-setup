@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data01-pv
+spec:
+  capacity:
+    storage: 3.5Ti
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 10.53.20.16
+    path: "/data01"
+  mountOptions:
+    - nfsvers=4.2
+    - rsize=65536
+    - wsize=65536
+    - noatime
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data02-pv
+spec:
+  capacity:
+    storage: 3.5Ti
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 10.53.20.16
+    path: "/data02"
+  mountOptions:
+    - nfsvers=4.2
+    - rsize=65536
+    - wsize=65536
+    - noatime
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data03-pv
+spec:
+  capacity:
+    storage: 3.5Ti
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 10.53.20.16
+    path: "/data03"
+  mountOptions:
+    - nfsvers=4.2
+    - rsize=65536
+    - wsize=65536
+    - noatime
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data04-pv
+spec:
+  capacity:
+    storage: 3.5Ti
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 10.53.20.16
+    path: "/data04"
+  mountOptions:
+    - nfsvers=4.2
+    - rsize=65536
+    - wsize=65536
+    - noatime

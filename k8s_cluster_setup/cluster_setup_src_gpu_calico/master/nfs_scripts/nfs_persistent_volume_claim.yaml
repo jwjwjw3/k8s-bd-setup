@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data01-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 3.5Ti
+  volumeName: data01-pv
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data02-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 3.5Ti
+  volumeName: data02-pv
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data03-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 3.5Ti
+  volumeName: data03-pv
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data04-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 3.5Ti
+  volumeName: data04-pv
