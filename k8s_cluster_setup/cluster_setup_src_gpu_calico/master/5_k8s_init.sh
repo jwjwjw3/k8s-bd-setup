@@ -6,7 +6,7 @@ source 0_settings.sh
 # start k8s cluster from master node 
 # if using dockerd, need option: --cri-socket=unix:///var/run/cri-dockerd.sock
 # REMEMBER TO CHECK POD-NETWORK-CIDR and match with settings in calico custom-resources_vXX.XX.XX.yaml
-# sudo kubeadm init  --config=/root/Documents/k8s_bd/k8s_cluster_setup/cluster_setup_src_gpu_calico/master/k8s-ipv6-config.yaml
+# sudo kubeadm init  --config=/root/Documents/k8s-bd-setup/k8s_cluster_setup/cluster_setup_src_gpu_calico/master/k8s-ipv6-config.yaml
 sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --cri-socket=unix:///var/run/cri-dockerd.sock # --apiserver-advertise-address 10.53.20.18
 
 # add k8s configs

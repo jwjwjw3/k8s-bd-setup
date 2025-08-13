@@ -12,10 +12,10 @@ RSYNC_TARGET_REMOTES = [
 ]
 IMAGE_TMP_DIR = "/data01/docker-export"     # if you change this, you also need to change "IMAGE_TMP_DIR" in DOCKER_IMPORT_SRC_FILENAME
 DOCKER_IMPORT_SRC_FILENAME = "docker_import_from_folder.py"
-DOCKER_IMPORT_MASTER_DIR = "/root/Documents/k8s_bd/k8s_cluster_setup/docker_images_sync/worker_scripts"
+DOCKER_IMPORT_MASTER_DIR = "/root/Documents/k8s-bd-setup/k8s_cluster_setup/docker_images_sync/worker_scripts"
 DOCKER_IMPORT_WORKER_DIR = "/root/Documents/"
 DOCKER_IMPORT_WORKERS_SERIAL = False
-DOCKER_IMPORT_WORKER_PARALLEL_LOGS_DIR = "/root/Documents/k8s_bd/k8s_cluster_setup/docker_images_sync/worker_logs"
+DOCKER_IMPORT_WORKER_PARALLEL_LOGS_DIR = "/root/Documents/k8s-bd-setup/k8s_cluster_setup/docker_images_sync/worker_logs"
 IMAGE_VER_PREFIX = "__"
 IMAGE_VER_SUFFIX = "__"
 IMAGE_FILE_EXT = ".tar"

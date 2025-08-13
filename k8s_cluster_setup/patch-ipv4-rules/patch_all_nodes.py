@@ -13,10 +13,10 @@ NODE_SSH_HOSTNAMES = [
     "gpu193-20-150", "gpu193-20-214"
 ]
 IPV4_RULE_PATCH_SRC_FILENAME = "run-ipv4-rule-patch.py"
-IPV4_RULE_PATCH_MASTER_DIR = "/root/Documents/k8s_bd/k8s_cluster_setup/patch-ipv4-rules/node_scripts"
+IPV4_RULE_PATCH_MASTER_DIR = "/root/Documents/k8s-bd-setup/k8s_cluster_setup/patch-ipv4-rules/node_scripts"
 IPV4_RULE_PATCH_WORKER_DIR = "/root/Documents/ipv4-rule-patch"
 IPV4_RULE_PATCH_SERIAL = False
-IPV4_RULE_PATCH_LOGS_DIR = "/root/Documents/k8s_bd/k8s_cluster_setup/patch-ipv4-rules/node_logs"
+IPV4_RULE_PATCH_LOGS_DIR = "/root/Documents/k8s-bd-setup/k8s_cluster_setup/patch-ipv4-rules/node_logs"
 #-------------------------------------------------------------------------------------
 
 # copy script `IPV4_RULE_PATCH_SRC_FILENAME` to all remotes, then execute "docker import" on all remotes
