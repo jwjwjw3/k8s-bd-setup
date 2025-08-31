@@ -86,7 +86,7 @@ else
     git clone https://github.com/prometheus-operator/kube-prometheus.git $k8s_cluster_setup_pdir/k8s_cluster_setup/k8s_tools/kube-prometheus
     cd $k8s_cluster_setup_pdir/k8s_cluster_setup/k8s_tools/kube-prometheus
     git checkout release-0.13
-    cd $k8s_cluster_setup_pdir/k8s_cluster_setup/cluster_setup_src_gpu/master
+    cd $k8s_cluster_setup_pdir/k8s_cluster_setup/cluster_setup_src_gpu_calico/master
 fi
 # # check flannel
 # if [ -d $k8s_cluster_setup_pdir/k8s_cluster_setup/k8s_tools/flannel ] 
@@ -131,7 +131,7 @@ fi
 #     rm -r _output
 #     sudo apt install make golang -y
 #     make build-manifest OPTS="PROMETHEUS_DEPLOY ESTIMATOR_SIDECAR_DEPLOY"
-#     cd $k8s_cluster_setup_pdir/k8s_cluster_setup/cluster_setup_src_gpu/master    
+#     cd $k8s_cluster_setup_pdir/k8s_cluster_setup/cluster_setup_src_gpu_calico/master    
 # fi
 
 # check NVIDIA-device-plugin
@@ -152,6 +152,6 @@ else
     git clone https://github.com/Mellanox/k8s-rdma-shared-dev-plugin.git $k8s_cluster_setup_pdir/k8s_cluster_setup/k8s_tools/k8s-rdma-shared-dev-plugin
     cd $k8s_cluster_setup_pdir/k8s_cluster_setup/k8s_tools/k8s-rdma-shared-dev-plugin
     git checkout v1.5.3
-    cd $k8s_cluster_setup_pdir/k8s_cluster_setup/cluster_setup_src_gpu/master
+    cd $k8s_cluster_setup_pdir/k8s_cluster_setup/cluster_setup_src_gpu_calico/master
 fi
 #####################################################################
